@@ -63,6 +63,7 @@ export function useToolbar() {
   }
 
   const onBack = () => {
+
     if (onBackButton && onBackButton instanceof Function) {
       onBackButton()
     }

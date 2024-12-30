@@ -890,11 +890,10 @@ body {
     }
 }
 
-.layout.desktop {
-    /*max-width: 800px;*/
-    max-width: var(--max-device-width);
-    margin: 0 auto;
-}
+/*.layout.desktop {*/
+/*    max-width: var(--max-device-width);*/
+/*    margin: 0 auto;*/
+/*}*/
 
 .layout {
     min-height: 100vh;

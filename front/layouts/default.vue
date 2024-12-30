@@ -1,7 +1,16 @@
 <template>
   <div :class="layoutClass">
-    <slot />
-    <app-bottom-toolbar />
+    <!--    TODO: Implement me later...   -->
+    <template v-if="device.isMobile || true">
+      <slot />
+      <app-bottom-toolbar />
+    </template>
+
+    <template v-else>
+      <app-left-sidebar />
+      <slot />
+    </template>
+
     <app-bottom-loading />
   </div>
 </template>
